@@ -7,11 +7,11 @@
     <title>Movies_List</title>
 </head>
 <body>
-    @php
-        
-    @endphp
+    <h1>Lista titoli film </h1>
     <ul>
-        
+        @foreach ($myMovies as $movie)
+            <li>{{$movie->title}}</li>
+        @endforeach
     </ul>
 </body>
 </html>
